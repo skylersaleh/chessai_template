@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "bk.h"
 #include "board.h"
 #include "move.h"
 #include "perft.h"
@@ -15,8 +14,8 @@ static Search search;
 static thrd_t thrd;
 
 void handle_uci() {
-    printf("id name Mister Queen\n");
-    printf("id author Michael Fogleman\n");
+    printf("id name " CHESS_ENGINE_NAME "\n");
+    printf("id author " CHESS_ENGINE_AUTHOR "\n");
     printf("uciok\n");
 }
 
@@ -113,13 +112,6 @@ int parse_line() {
     }
     if (strcmp(line, "perft") == 0) {
         perft_tests();
-    }
-    if (strcmp(line, "bk") == 0) {
-        bk_tests();
-    }
-    int index;
-    if (sscanf(line, "test %d", &index) == 1) {
-        test_position(index);
     }
     return 1;
 }

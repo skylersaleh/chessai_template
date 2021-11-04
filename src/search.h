@@ -3,11 +3,8 @@
 
 #include "board.h"
 #include "move.h"
-#include "table.h"
 
-#define INF 1000000
-#define MATE 100000
-
+// Declare any data that your engine needs across moves here
 typedef struct {
     // input
     int uci;
@@ -19,8 +16,6 @@ typedef struct {
     int stop;
     // internal
     int nodes;
-    Table table;
-    PawnTable pawn_table;
 } Search;
 
 int do_search(Search *search, Board *board);

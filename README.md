@@ -4,6 +4,7 @@ It implements the UCI protocol and basic board management boilerplate allowing f
 to be used in any chess program that supports UCI engines. Such as Xboard or Winboard.
 
 For example purposes this AI implements the following simple algorithm:
+- If there is one or more moves that put the opponent in check choose one at random
 - If there is any valid move to attack the opponents piece, perform the move that takes the most valuable piece. 
 - If a valid move can't attack an opponents, do a random valid move. 
 
