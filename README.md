@@ -1,5 +1,8 @@
-# Chess AI tournament template
-This repo contains a template project for use in developing chess engines for the Chess AI Competition.
+# Chess AI Template
+
+https://user-images.githubusercontent.com/7118296/140291247-5806681e-e63f-4449-a150-878a0bf03b7f.mov
+
+This repo contains a template project for use in developing chess engines.
 It implements the UCI protocol and basic board management boilerplate allowing for the users chess engine 
 to be used in any chess program that supports UCI engines. Such as Xboard or Winboard.
 
